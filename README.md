@@ -1,13 +1,13 @@
 ### Prerequisites
 
-I also use a number of node.js tools to initialize and test the project. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+A number of node.js tools is used to initialize and test the project. You must have node.js and
+its package manager (npm) installed.  
 
 ### Install Dependencies
 
 There are two kinds of dependencies in this project: tools and angular framework code.  The tools help manage and test the application.
 
-* Get the tools I depend upon via `npm`, the [node package manager][npm].
+* Get the tools depend upon via `npm`, the [node package manager][npm].
 * Get the angular code via `bower`, a [client-side code package manager][bower].
 
 Tools have been preconfigured `npm` to automatically run `bower` so you can simply do:
@@ -67,8 +67,8 @@ There are two kinds of tests in the project application: Unit tests and end-to-e
 ### Running Unit Tests
 
 The project app comes preconfigured with unit tests. These are written in
-[Jasmine][jasmine], which I run with the [Karma Test Runner][karma]. I provide a Karma
-configuration file to run them.
+[Jasmine][jasmine], which I run with the [Karma Test Runner][karma]. A Karma
+configuration file is provided to run them.
 
 * the configuration is found at `karma.conf.js`
 * the unit tests are found next to the code they are testing and are named as `..._test.js`.
@@ -114,16 +114,7 @@ npm run protractor
 
 This script will execute the end-to-end tests against the application being hosted on the
 development server.
-
-
-## Serving the Application Files
-
-While angular is client-side-only technology and it's possible to create angular webapps that
-don't require a backend server at all, I recommend serving the project files using a local
-webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
-sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
-etc to function properly when an html page is opened via `file://` scheme instead of `http://`.
-
+s
 
 ### Running the App during Development
 
