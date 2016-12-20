@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 1; 
+  height: 100%;
+  font-family: font-family: Dosis; Roboto;
+  font-weight: 100; 
+  overflow: auto;
+  -webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;
+}
+.box {
+  height: 100%;
+}
+h1 {
+  margin: 2;
+}
+.title_header {
+  font-size: 1.6rem;
+  color:  #696969;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+#header {
+  top: 0px;
+  position: fixed;
+  background-color: #DCDCDC;
+  width:100%;
+  height: 8%;
+  text-align: center;
+  display: block;  
+  z-index: 1;  
+}
+/******************   GRID CONTAINER ******************/
+.container_box {
+  border-width: 1px;
+}
+.section {
+  clear: both;
+  padding: 0px;
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-color: #ff0000 #0000ff;
+  border: 1px solid grey;
+  border-radius: 5px; 
+}
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+}
+.col:first-child { margin-left: 0; }
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 25%;
+}
+.span_1_of_2 {
+  width: 60%;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+/****************** TEXT EDITOT ******************/
+.ace_editor { 
+  height: 450px; 
+}
+/******************  BUTTON ******************/
+.button_container {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+/******************  MESSAGE DISPLAY ******************/
+.box-message{
+  position: relative;
+  margin-top: 40%;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+}
+.animate-hide {
+  transition: all linear 0.5s;
+  line-height: 40px;
+  opacity: 1;
+  padding-left: 15%;
+  background: white;
+}
+.animate-hide.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+.check-element {
+  padding: 10px;
+  background: white;
+}
+
+/****************** FOOTER ******************/
+.footer {
+  height: 5px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+}

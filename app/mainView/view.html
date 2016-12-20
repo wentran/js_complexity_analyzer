@@ -1,0 +1,32 @@
+<div ng-controller="mainViewCtrl">
+  <div class="container_box">
+    <div id="header">
+      <div class="title_header">JS Complexity Checker</div>
+    </div>
+    <div class="section group">
+     <div class="col span_1_of_2">
+      <form novalidate class="simple-form">
+       <div 
+       ui-ace="{
+       showGutter: true,
+       theme: 'idle_fingers',
+     }" ng-model="jsCode"></div>
+   </form>
+ </div>
+ <div class="col span_2_of_2">
+   <div class="box-message">
+    <div>
+     <div class="check-element animate-hide" ng-show="jsCode">
+       Cyclomatic complexity number for this function is {{checkResult}} </div>
+       <div class="check-element animate-hide" ng-hide="jsCode"> </div>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="button_container">
+  <input style="padding-top: 7px"; 
+  type="submit" ng-click="checkJSCode(jsCode)" value="Run Complexity Check"/>
+</div>
+</div>
+</div>
+<footer class="footer">Version 0.0.1</footer>
